@@ -190,7 +190,12 @@
                     </button>
                     </div>
                     <p>Coach-009-WEB ! AC_Business</p>
-                    <input type="input" class="input w-full" placeholder="Route" />
+                    <select class="select select-accent w-full">
+                      <option selected disabled>Route</option>
+                      <option>Dhaka To Chittagong</option>
+                      <option>Dhaka To Sylhet</option>
+                      <option>Dhaka To Borishal</option>
+                    </select>
                     <!-- <label class="label"></label> -->
                     <input type="input" class="input w-full" placeholder="Departure Time" />
                     <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
@@ -220,11 +225,11 @@
               <!--  -->
 
                 <div class="join p-1">
-                  <button class="join-item btn btn-xl">A1</button>
-                  <button class="join-item btn btn-xl">A2</button>
-                  <button class="join-item btn btn-xl btn-disabled"></button>
-                  <button class="join-item btn btn-xl">A3</button>
-                  <button class="join-item btn btn-xl">A4</button>
+                  <button onclick="seatSelect()" id="a-class1" class="join-item btn btn-xl">A1</button>
+                  <button id="a-class2" class="join-item btn btn-xl">A2</button>
+                  <button id="a-class3" class="join-item btn btn-xl btn-disabled"></button>
+                  <button id="a-class4" class="join-item btn btn-xl">A3</button>
+                  <button id="a-class5" class="join-item btn btn-xl">A4</button>
                 </div>
                 <div class="join p-2">
                   <button class="join-item btn btn-xl">B1</button>
@@ -305,15 +310,15 @@
                 <div class="flex gap-25">
                 <div>
                   <h1>Seat</h1>
-                  <p>c1</p>
+                  <p id="seat"></p>
                 </div>
                 <div>
                   <h1>Class</h1>
-                  <p>economy</p>
+                  <p id="seat"></p>
                 </div>
                 <div>
                   <h1>Price</h1>
-                  <p>200</p>
+                  <p id="seat">550</p>
                 </div>
               </div>
               <hr>
@@ -398,5 +403,6 @@
       </nav>
     </footer>
        <script src="js/buyticket.js"></script>
+       <script src="js/alphabetclass.js"></script>
 </body>
 </html>
